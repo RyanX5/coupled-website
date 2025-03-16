@@ -1,0 +1,102 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #151218;
+    text-align: center;
+    color: white;
+    position: relative;
+    /* Required for absolute positioning of the footer */
+    min-height: 100vh;
+    /* Ensure the body takes at least the full height of the viewport */
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 5rem;
+    padding-top: 20px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+}
+
+.dot {
+    color: #D6BBFB;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+    display: inline-block;
+    animation: blink 1.5s infinite;
+}
+
+.rel {
+    font-weight: 700;
+    color: #D6BBFB;
+}
+
+p {
+    font-size: 1.6rem;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-weight: 200
+}
+
+a {
+    display: inline-block;
+    background-color: #D6BBFB;
+    text-decoration: none;
+    color: #3B255A;
+    padding: 16px;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 0 25px #D6BBFB;
+    transition: 0.3s;
+    transition-property: box-shadow;
+}
+
+a:hover {
+    box-shadow:
+        0 0 5px #D6BBFB,
+        0 0 15px #D6BBFB,
+        0 0 60px #D6BBFB,
+        0 0 150px #D6BBFB;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    display: block;
+    height: auto;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
